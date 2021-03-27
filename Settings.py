@@ -25,6 +25,8 @@ class Settings:
                     "port_a4": "",
                     "port_a5": "",
                     "port_pool": "",
+                    "tpa1HoA1": "",
+                    "tpa2temple": "",
                     "right_click": "",
                     "left_click": "",
                     "lower_difficulty": "",
