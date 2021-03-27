@@ -332,6 +332,46 @@ def port_pool(poolspotlist):
             send_mouse(handle, 'LM', bw_map[0], bw_map[1])
             send_mouse(handle, 'LM', act[0], act[1])
             send_mouse(handle, 'LM', wp[0], wp[1])
+# Port HoA1 (test)
+
+def tpa1HoA1():
+    handle = win32gui.FindWindow('D3 Main Window Class', 'Diablo III')
+    if handle:
+        # open map
+        send_key(handle, 'm')
+        sleep(0.2)
+        # reduce map
+        map = transform_coordinates(handle, 895, 130)
+        send_mouse(handle, 'LM', map[0], map[1])
+        sleep(0.2)
+        # select A1
+        map = transform_coordinates(handle, 740, 620)
+        send_mouse(handle, 'LM', map[0], map[1])
+        sleep(0.2)
+        # select HoA1
+        map = transform_coordinates(handle, 467, 380)
+        send_mouse(handle, 'LM', map[0], map[1])
+
+
+# Port Temple (test)
+
+def tpa2temple():
+    handle = win32gui.FindWindow('D3 Main Window Class', 'Diablo III')
+    if handle:
+        # open map
+        send_key(handle, 'm')
+        sleep(0.2)
+        # reduce map
+        map = transform_coordinates(handle, 895, 130)
+        send_mouse(handle, 'LM', map[0], map[1])
+        sleep(0.2)
+        # select A2
+        map = transform_coordinates(handle, 1090, 525)
+        send_mouse(handle, 'LM', map[0], map[1])
+        sleep(0.2)
+        # select Temple 
+        map = transform_coordinates(handle, 1430, 380)
+        send_mouse(handle, 'LM', map[0], map[1])
 
 
 # Works
